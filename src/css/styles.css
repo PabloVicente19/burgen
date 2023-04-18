@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=Dancing+Script&family=Source+Sans+Pro:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+:root{
+  --black:#2b2f31;
+  --yellow:#fbbe00;
+  --gray:#718184f2;
+  --grayLigth: #f8f8f8;
+  --fontChivoMono: 'Chivo Mono', monospace;
+  --fontSourcePro: 'Source Sans Pro', sans-serif;
+  --fontCursive:'Dancing Script', cursive;
+}
+/* Para mostrar el menu desplegable */
+.show{
+  transform: translateX(0%) !important;
+}
+body{
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--black);
+}
+.header{
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+/* Navbar */
+.navbar{
+  width: 100%;
+  height: 60px;
+  padding: 0px 15px;
+  background-color: var(--grayLigth);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.navbar-logo-content{
+  display: inline;
+  font-family: var(--fontCursive);
+  color: var(--yellow);
+  text-shadow: 1px 0px 3px #000;
+  font-style: oblique;
+  font-size: 1.4rem;
+}
+.navbar-logo-content a {
+  color: var(--yellow);
+}
+.menu-bars{
+  cursor: pointer;
+  font-size: 25px;
+}
+/* Contenido del menu */
+.navbar-list{
+  width: 90%;
+  height: calc(100vh - 60px);
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color:var(--grayLigth);
+  border-start-end-radius:20px ;
+  border-end-end-radius:20px ;
+  transform: translateX(-100%);
+  transition: .3s transform;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.navbar-list-links{
+  font-family: var(--fontSourcePro);
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.navbar-list-links:hover{
+  padding-left: 30px;
+  transition: .3s padding-left;
+}
+/* Icono carrito y registro */
+.navbar-icons-container{
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+.navbar-icons-container i:nth-child(2){
+  color: var(--yellow);
+}
+/* Hero */
+.cards-hero{
+  height: calc(100vh - 60px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60% 40%;
+}
+.card-hero-first{
+  padding: 1rem;
+  grid-column: 1/3;
+  grid-row: 1;
+  background-image:
+  linear-gradient(0deg, 
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.2)),
+    url("../imgs/hero/burga.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-hero-two{
+  grid-column: 1/2;
+  grid-row: 2;
+  background-image:
+  linear-gradient(0deg, 
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.2)),
+    url("../imgs/hero/burger-hero.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.card-hero-three{
+  grid-column: 2/3;
+  grid-row: 2;
+  background-image:
+  linear-gradient(0deg, 
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.2)),
+    url("../imgs/hero/birra-hero.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+/* Titulo de la card principal */
+.card-hero-title-main{
+  color: var(--yellow);
+  font-family: var(--fontCursive);
+  font-size: 2.5rem;
+  align-self: center;
+  letter-spacing:2px;
+}
+.card-hero-text-main{
+  align-self: center;
+  color: var(--yellow);
+  font-family: var(--fontChivoMono);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.card-hero-title{
+  margin-bottom: .5rem;
+  font-family: var(--fontChivoMono);
+  font-size: 1.5rem;
+  color: var(--grayLigth);
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 2px #000
+}
+.card-hero-title:hover{
+  padding-bottom: 3rem;
+  transition: padding-bottom .3s;
+}
+ 
+/* main */
+.main-content{
+  min-height: 100vh;
+  background-image:
+  linear-gradient(0deg, 
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.2)),
+    url("../imgs/burga-main.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 9;
+}
+/* Contenido sobre la compania */
+.content-aboutUs{
+  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  opacity: .8;
+}
+.aboutUs-title{
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--fontChivoMono);
+  margin: 1rem auto;
+}
+.aboutUs-text{
+  width: 80%;
+  text-align: center;
+  text-justify: inter-word;
+  font-family: var(--fontSourcePro);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+}
+.aboutUs-text span{
+  display: block;
+  text-align: center;
+  margin: 1.4rem 0 .5rem 0;
+  letter-spacing: .2rem;
+}
