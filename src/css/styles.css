@@ -52,6 +52,7 @@ body{
   color: var(--yellow);
 }
 .menu-bars{
+  padding: 5px;
   cursor: pointer;
   font-size: 25px;
 }
@@ -72,6 +73,7 @@ body{
   justify-content: center;
   align-items: center;
   gap: 100px;
+  opacity: .96;
 }
 .navbar-list-links{
   font-family: var(--fontSourcePro);
@@ -183,6 +185,9 @@ body{
   background-position: center;
   background-size: cover;
   z-index: 9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 /* Contenido sobre la compania */
 .content-aboutUs{
@@ -214,4 +219,46 @@ body{
   text-align: center;
   margin: 1.4rem 0 .5rem 0;
   letter-spacing: .2rem;
+}
+
+/* Cards Testimoniales */
+.testimonial-cards-container{
+  flex-basis: 100%;
+  /* min-height: 200px; */
+  background-color: var(--grayLigth);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-card{
+  margin: 1rem;
+  padding: 1rem;
+  width: 200px;
+  /* height: auto; */
+  border: 1px solid #000;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.testimonial-card-title{
+  margin-top: 1rem;
+  font-size: 19px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.testimonial-card-description{
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+.testimonial-card-stars-content{
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.testimonial-card-stars-content i{
+  color:var(--yellow);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
 }
