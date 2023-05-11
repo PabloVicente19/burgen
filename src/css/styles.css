@@ -235,12 +235,10 @@ body{
   margin: 1rem;
   padding: 1rem;
   width: 200px;
-  /* height: auto; */
   border: 1px solid #000;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 .testimonial-card-title{
@@ -261,4 +259,13 @@ body{
 .testimonial-card-stars-content i{
   color:var(--yellow);
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
+}
+
+/*  CONTENEDOR DEL MENU */
+.menu-container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
