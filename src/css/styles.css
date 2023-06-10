@@ -5,12 +5,14 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 :root{
   --black:#2b2f31;
   --yellow:#fbbe00;
   --gray:#718184f2;
   --grayLigth: #f8f8f8;
+  --blue:#0D6D8C;
   --fontChivoMono: 'Chivo Mono', monospace;
   --fontSourcePro: 'Source Sans Pro', sans-serif;
   --fontCursive:'Dancing Script', cursive;
@@ -268,4 +270,58 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+/* Cards de las haburguesas */
+.burger-card{
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray);
+  padding: 1rem;
+  border-radius: 2rem;
+  gap: 10px;
+}
+.burger-card-img-content{
+  display: inline;
+}
+.card-burger-img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.card-burger-title{
+  font-size: 1.5rem;
+  font-family: var(--fontChivoMono);
+  letter-spacing: 1px;
+}
+.card-burger-ingredients{
+  text-align: center;
+  font-family: var(--fontSourcePro);
+  font-weight: 600;
+  font-size: 15px;
+}
+.card-burger-price-and-btn{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+.card-burger-price{
+  font-size: 1.4rem;
+}
+.card-burger-btn{
+  margin-top: 5px;
+  padding: .5rem 1.5rem;
+  border-radius: .5rem;
+  border: none;
+  font-family: var(--fontSourcePro);
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: var(--blue);
+  color: var(--grayLigth);
 }
