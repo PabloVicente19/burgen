@@ -264,16 +264,30 @@ body{
 }
 
 /*  CONTENEDOR DEL MENU */
-.menu-container{
-  min-height: 100vh;
+/* Titulo del contenedor  */
+.burger-menu-title{
+  color: var(--grayLigth);
+  font-family: var(--fontCursive);
+  font-size: 3rem;
+  font-weight: 100;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* Contenedor de las cards */
+.burgers-card-content{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: var(--yellow);
+  gap: 20px;
+  padding: 20px 0px;
 }
 /* Cards de las haburguesas */
 .burger-card{
-  width: 300px;
+  width: 250px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
