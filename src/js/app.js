@@ -1,13 +1,15 @@
 // funcion que  crea las cards de las hamburguesas
 const createCardBurguer = (product) => {
-	const { id, name, image, price, group } = product;
+	const { id, name, image, price, group, ingredients } = product;
 	return `
-  <div class="card " style="width: 17rem;">
-      <img src=${image} class="card-img-top img-fluid" alt="...">
-    <div class="card-body">
+  <div class="card " style="width: 16rem">
+      <div class="img-container d-block">
+        <img src=${image} class="img-fluid w-100 h-100 " alt=${name}>
+      </div>
+    <div class="card-body d-flex flex-column justify-content-center">
       <h5 class="card-title text-center">${name}</h5>
-      <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary ">Go somewhere</a>
+      <p class="lh-1 card-text text-center w-100">${ingredients}</p>
+      <button href="#" class="btn btn-primary">Agregar</button>
     </div>
   </div>`;
 };
