@@ -8,7 +8,7 @@ const createCardBurguer = (product) => {
       </div>
     <div class="card-body d-flex flex-column justify-content-between">
       <h5 class="card-title text-center">${name}</h5>
-      <p class="lh-1 card-text text-center w-100">${ingredients}</p>
+      <p class="lh-1 card-text text-center w-100">${ingredients.join("")}</p>
       <button href="#" class="btn btn-primary align-self-center pt-2 pb-2 ps-4 pe-4">Agregar</button>
     </div>
   </div>`;

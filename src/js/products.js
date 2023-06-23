@@ -66,7 +66,7 @@ const products = [
 		group: "burguer",
 		image: "./src/imgs/burguers/roque.jpg",
 		ingredients: [
-			"MedallonPremium",
+			"Medallon Premium",
 			"Roquefort",
 			"Salsa BBQ",
 			"Rucula",
@@ -80,7 +80,7 @@ const products = [
 		group: "burguer",
 		image: "./src/imgs/burguers/triple-mortal.jpg",
 		ingredients: [
-			"Triple MedallonPremium",
+			"Triple Medallon Premium",
 			"Muzzarela",
 			"Bacon",
 			"Lechuga",
