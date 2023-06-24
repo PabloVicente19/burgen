@@ -231,7 +231,7 @@ body {
 	margin: 20px auto;
 	padding: 2rem;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: stretch;
 	flex-wrap: wrap;
 	gap: 20px;
@@ -265,3 +265,4 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
