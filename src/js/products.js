@@ -2,7 +2,7 @@ const products = [
 	{
 		id: 1,
 		name: "Americana",
-		group: "burguer",
+		category: "burger",
 		image: "./src/imgs/burguers/americana.jpg",
 		ingredients: [
 			"Medallon Premium",
@@ -16,7 +16,7 @@ const products = [
 	{
 		id: 2,
 		name: "Chees",
-		group: "burguer",
+		category: "burger",
 		image: "./src/imgs/burguers/chees.jpg",
 		ingredients: [
 			"Medallon Premium",
@@ -31,7 +31,7 @@ const products = [
 	{
 		id: 3,
 		name: "Doble Nelson",
-		group: "burguer",
+		category: "burger",
 		image: "./src/imgs/burguers/doble-nelson.jpeg",
 		ingredients: [
 			"Doble Medallon Premium",
@@ -46,8 +46,9 @@ const products = [
 	},
 	{
 		id: 4,
+		
 		name: "Repo",
-		group: "burguer",
+		category: "burger",
 		image: "./src/imgs/burguers/repo.jpg",
 		ingredients: [
 			"Medallon Premium Pollo",
@@ -63,7 +64,7 @@ const products = [
 	{
 		id: 5,
 		name: "roque",
-		group: "burguer",
+		category: "burger",
 		image: "./src/imgs/burguers/roque.jpg",
 		ingredients: [
 			"Medallon Premium",
@@ -77,7 +78,7 @@ const products = [
 	{
 		id: 6,
 		name: "Triple Mortal",
-		group: "burguer",
+		category: "burger",
 		image: "./src/imgs/burguers/triple-mortal.jpg",
 		ingredients: [
 			"Triple Medallon Premium",
@@ -88,5 +89,40 @@ const products = [
 			"Papas Fritas",
 		],
 		price: 3300,
+	},
+	{
+		id: 7,
+		name: "The Rock",
+		category: "beer",
+		image: "./src/imgs/beers/black.jpg",
+		price: 1000,
+	},
+	{
+		id: 8,
+		name: "Honey",
+		category: "beer",
+		image: "./src/imgs/beers/honey.jpg",
+		price: 2300,
+	},
+	{
+		id: 9,
+		name: "Golden",
+		category: "beer",
+		image: "./src/imgs/beers/golden.jpg",
+		price: 2300,
+	},
+	{
+		id: 10,
+		name: "Stella",
+		category: "beer",
+		image: "./src/imgs/beers/stella.jpg",
+		price: 2300,
+	},
+	{
+		id: 10,
+		name: "Heineken",
+		category: "beer",
+		image: "./src/imgs/beers/heineken.png",
+		price: 2300,
 	},
 ];

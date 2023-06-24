@@ -208,6 +208,7 @@ body {
   letter-spacing: 2px;
 }
 
+/*  CONTENEDOR DEL MENU */
 .main-content {
 	min-height: 100vh;
 	background-image: linear-gradient(
@@ -224,21 +225,10 @@ body {
 	justify-content: center;
 }  
 
-/*  CONTENEDOR DEL MENU */
-
-/* Titulo del contenedor  */
-.burger-menu-title {
-	color: var(--grayLigth);
-	font-family: var(--fontCursive);
-	font-size: 3rem;
-	font-weight: 100;
-	text-transform: capitalize;
-	margin-bottom: 10px;
-	text-align: center;
-}
-
 /* Contenedor de las hamburguesas */
-.menu-burgers-container {
+.menu-burgers-container,
+.menu-beer-container {
+	margin: 20px auto;
 	padding: 2rem;
 	display: flex;
 	justify-content: space-between;
@@ -246,7 +236,32 @@ body {
 	flex-wrap: wrap;
 	gap: 20px;
 }
+.menu-burgers-container{
+	background-image: url(../imgs/burguers/burger-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.menu-burguer-title{
+	flex-basis: 100%;
+	text-align: center;
+	color: var(--grayLigth);
+	font-family: var(--fontCursive);
+}
+/* Contenedor de las imagenes que se encuentra en el render de js */
 .img-container {
   display: block;
 	height: 200px;
+}
+
+.menu-beer-container{
+	background-image: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.2),
+			rgba(0, 0, 0, 0.2)
+		),  
+		url("../imgs/beers/beer-bg2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
