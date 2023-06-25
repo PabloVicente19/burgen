@@ -1,0 +1,27 @@
+@import url("../css/mediaQuery.css");
+@media screen and (max-width:420px) {
+  .header{
+    min-height: auto;
+  }
+  .navbar-list{
+    height: 500px;
+  }
+  .cards-hero{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .card-hero-first,
+  .card-hero-two,
+  .card-hero-three{
+    height: 220px;
+  }
+  .aboutUs-title,
+  .aboutUs-text{
+    padding: 10px;
+    text-align: center;
+  }
+  .aboutUs-text{
+    width: 100%;
+  }
+}

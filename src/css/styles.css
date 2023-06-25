@@ -95,6 +95,7 @@ body {
 }
 .navbar-icons-container i:nth-child(2) {
 	color: var(--yellow);
+  cursor: pointer;
 }
 /* Hero */
 .cards-hero {
@@ -228,13 +229,12 @@ body {
 /* Contenedor de las hamburguesas */
 .menu-burgers-container,
 .menu-beer-container {
-	margin: 20px auto;
-	padding: 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: stretch;
 	flex-wrap: wrap;
 	gap: 20px;
+  padding: 1rem 0;
 }
 .menu-burgers-container{
 	background-image: url(../imgs/burguers/burger-bg.jpg);
@@ -242,8 +242,10 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.menu-burguer-title{
+.menu-burguer-title,
+.menu-beer-title{
 	flex-basis: 100%;
+  margin-top: 1rem;
 	text-align: center;
 	color: var(--grayLigth);
 	font-family: var(--fontCursive);
