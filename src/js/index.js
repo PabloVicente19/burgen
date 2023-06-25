@@ -1,5 +1,6 @@
 const $menuIcon = document.querySelector(".menu-bars");
 const $menuList = document.querySelector(".navbar-list");
+// Contenero de las cards
 const $mainContainer = document.querySelector('.main-container')
 const $menuBurger = document.querySelector(".menu-burgers-container");
 const $menuBeer = document.querySelector('.menu-beer-container');

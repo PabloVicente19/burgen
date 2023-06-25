@@ -43,8 +43,12 @@ const renderCard = (container, arr, category) => {
 
 const addProductCart = (e) => {
   // Almaceno el id en la variable
-  let productId = e.target.dataset.id
+  let productId = Number(e.target.dataset.id);
   // Si no existe el id que retorne
   if(!productId) return;
 
+// Filtro los productos por id
+  let filterProd = copyOfProducts.filter(product => product.id == productId);
+
+  cart.push(filterProd)
 }
