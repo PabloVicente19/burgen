@@ -35,9 +35,25 @@ return`<div class="card d-flex justify-content-between" style="width: 16rem">
         </div>
       </div>`;
 }}
+
+const createCardInCart = (product) => {
+  const {image, name, price, quantity} = product;
+  return`        <div class="card-cart">
+  <img src=${image} alt="${name}" class="card-cart-img">
+  <h4 class="card-cart-title">${name}</h4>
+  <span class="card-cart-price">$:${price}</span>
+  <div class="card-cart-btns-container">
+    <button class="card-cart-btn-add">+</button>
+    <span class="card-cart-btn-quantity">${quantity}</span>
+    <button class="card-cart-btn-substract">-</button>
+  </div>
+</div>`
+
+}
+
 // Funcion que sirve para renderizar
 // Category sirve para separar dentro del objeto la categoria
-const renderCard = (container, arr, category) => {
+const renderCard = (container, arr, category = null) => {
 	return (container.innerHTML += arr.map(category).join(""));
 };
 
@@ -50,5 +66,9 @@ const addProductCart = (e) => {
 // Filtro los productos por id
   let filterProd = copyOfProducts.filter(product => product.id == productId);
 
-  cart.push(filterProd)
+  if(filterProd){
+    cart.push(filterProd)
+  }
+  console.log(cart)
 }
+
