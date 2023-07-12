@@ -95,7 +95,7 @@ body {
 }
 .navbar-icons-container i:nth-child(2) {
 	color: var(--yellow);
-  cursor: pointer;
+	cursor: pointer;
 }
 /* Hero */
 .cards-hero {
@@ -119,7 +119,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
 }
 .card-hero-two {
 	grid-column: 1/2;
@@ -181,32 +180,32 @@ body {
 }
 
 /* Contenido sobre la compania */
-.about-company{
-  padding: 1.5rem 0;
-  background-color: var(--yellow);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+.about-company {
+	padding: 1.5rem 0;
+	background-color: var(--yellow);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
 }
-.aboutUs-title{
-  font-size: 2.2rem;
-  font-family: var(--fontChivoMono);
+.aboutUs-title {
+	font-size: 2.2rem;
+	font-family: var(--fontChivoMono);
 }
-.aboutUs-text{
-  width: 60%;
-  text-align: center;
-  font-family: var(--fontSourcePro);
-  color: var(--black);
-  font-weight: bold;
+.aboutUs-text {
+	width: 60%;
+	text-align: center;
+	font-family: var(--fontSourcePro);
+	color: var(--black);
+	font-weight: bold;
 }
-.aboutUs-text span{
-  margin-top: 10px;
-  display: block;
-  font-family: var(--fontChivoMono);
-  font-weight: bold;
-  letter-spacing: 2px;
+.aboutUs-text span {
+	margin-top: 10px;
+	display: block;
+	font-family: var(--fontChivoMono);
+	font-weight: bold;
+	letter-spacing: 2px;
 }
 
 /*  CONTENEDOR DEL MENU */
@@ -216,15 +215,15 @@ body {
 			0deg,
 			rgba(0, 0, 0, 0.2),
 			rgba(0, 0, 0, 0.2)
-		),  
+		),
 		url("../imgs/burga-main.jpg");
-	background-position: center;  
+	background-position: center;
 	background-size: cover;
 	z-index: 9;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-}  
+}
 
 /* Contenedor de las hamburguesas */
 .menu-burgers-container,
@@ -234,98 +233,105 @@ body {
 	align-items: stretch;
 	flex-wrap: wrap;
 	gap: 20px;
-  padding: 1rem 0;
+	padding: 1rem 0;
 }
-.menu-burgers-container{
+.menu-burgers-container {
 	background-image: url(../imgs/burguers/burger-bg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .menu-burguer-title,
-.menu-beer-title{
+.menu-beer-title {
 	flex-basis: 100%;
-  margin-top: 1rem;
+	margin-top: 1rem;
 	text-align: center;
 	color: var(--grayLigth);
 	font-family: var(--fontCursive);
-  font-size: 2rem;
+	font-size: 2rem;
 }
 /* Contenedor de las imagenes que se encuentra en el render de js */
 .img-container {
-  display: block;
+	display: block;
 	height: 200px;
 }
 
-.menu-beer-container{
+.menu-beer-container {
 	background-image: linear-gradient(
 			0deg,
 			rgba(0, 0, 0, 0.2),
 			rgba(0, 0, 0, 0.2)
-		),  
+		),
 		url("../imgs/beers/beer-bg2.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-
 /* FOOTER */
-.footer-container{
-  background-color: var(--yellow);
-  min-height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer-container {
+	background-color: var(--yellow);
+	min-height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.socials-media a{
-  padding: 0 20px;
-  align-self: center;
-  color: var(--black);
-  font-size: 1.4rem;
+.socials-media a {
+	padding: 0 20px;
+	align-self: center;
+	color: var(--black);
+	font-size: 1.4rem;
 }
 
 /* Carrito */
-.card-cart{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: auto;
+.card-cart {
+	margin: 10px;
+	padding: 5px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: auto;
+	border: 1px solid gray;
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.377);
 }
-.card-cart-img{
-  grid-column: 1/2;
-  grid-row: 1/3;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+.card-cart-img {
+	grid-column: 1/2;
+	grid-row: 1/3;
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	border-radius: 1rem;
 }
-.card-cart-title{
-  grid-column: 2/3;
-  grid-row: 1;
-  align-self: flex-start;
+.card-cart-title {
+	grid-column: 2/3;
+	grid-row: 1;
+	align-self: flex-start;
+	font-family: var(--fontChivoMono);
+	font-size: 16px;
 }
-.card-cart-price{
-  grid-column: 2/3;
-  grid-row: 2;
-  align-self: flex-end;
+.card-cart-price {
+	grid-column: 2/3;
+	grid-row: 2;
+	align-self: flex-end;
+	font-weight: bold;
+	font-size: 1.1rem;
 }
-.card-cart-btns-container{
-  grid-column: 3/4;
-  grid-row: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
+.card-cart-btns-container {
+	grid-column: 3/4;
+	grid-row: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
 }
-.card-cart-btns-container button{
-  /* border: 0; */
-  color: var(--grayLigth);
-  font-weight: bold;
-  font-size: 1.2rem;
-  width: 30px;
-  padding: 1px 0;
-  border: 0;
-  background-color: var(--gray);
-  border-radius: 6px;
-  padding-bottom: 5px;
+.card-cart-btns-container button {
+	/* border: 0; */
+	color: var(--grayLigth);
+	font-weight: bold;
+	font-size: 1.2rem;
+	width: 30px;
+	border: 0;
+	background-color: var(--gray);
+	border-radius: 6px;
+	padding-bottom: 5px;
 }
-

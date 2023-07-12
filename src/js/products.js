@@ -46,7 +46,7 @@ const products = [
 	},
 	{
 		id: 4,
-		
+
 		name: "Repo",
 		category: "burger",
 		image: "./src/imgs/burguers/repo.jpg",
